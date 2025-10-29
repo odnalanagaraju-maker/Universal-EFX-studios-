@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Universal EFX Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Universal EFX Logo" class="logo" />
+        <img src="assets/logo-text.png" alt="Universal EFX Text" class="logo-text" />
+      </div>
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact us</a>
+      </nav>
+
+      <button id="menuToggle" class="menu-toggle">Toggle Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Services -->
+    <section id="services" class="section services container">
+      <h2>Our Services</h2>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <img src="assets/before-rotoscoping.jpg" alt="Rotoscoping" />
+          <h3>Rotoscoping</h3>
+          <p>Clean edges. Perfect motion. Every frame.</p>
+          <ul>
+            <li>Complex hair & motion blur details</li>
+            <li>Multi-pass roto for VFX layering</li>
+            <li>Delivered in Nuke, Silhouette or Mocha workflows</li>
+            <li>Ideal for feature films, TVCs, OTT and streaming content</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/before-prep-paint.jpg" alt="Prep/Paint (Cleanup)" />
+          <h3>Prep / Paint (Cleanup)</h3>
+          <p>We erase what shouldn’t be there — flawlessly.</p>
+          <ul>
+            <li>Wire, rig and marker removal</li>
+            <li>Beauty cleanup / de-aging / tattoo removal</li>
+            <li>Plate restoration and BG fixes</li>
+            <li>High-quality frame continuity for VFX integration</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/before-tracking.jpg" alt="Match Moving / Tracking" />
+          <h3>Match Moving / Tracking</h3>
+          <p>Perfect tracking — the invisible foundation of flawless CG.</p>
+          <ul>
+            <li>3D camera matchmoving for VFX/CGI</li>
+            <li>Object, prop and face tracking</li>
+            <li>Lens distortion analysis & removal</li>
+            <li>FBX / Alembic / Maya-ready outputs</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/before-compositing.jpg" alt="Compositing" />
+          <h3>Compositing</h3>
+          <p>Bringing it all together — seamlessly.</p>
+          <ul>
+            <li>Green/blue screen keying</li>
+            <li>Layer-based and node-based compositing (Nuke, After Effects)</li>
+            <li>Color correction, relighting and shot integration</li>
+            <li>Delivery for OTT, commercials, music videos and films</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects container">
+      <h2>Our Projects</h2>
+
+      <div class="projects-grid">
+        <figure class="project">
+          <img src="assets/movie1.jpg" alt="Bahubali 2" />
+          <figcaption>BAHUBALI 2 THE CONCLUSION</figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="assets/movie2.jpg" alt="Kanguva" />
+          <figcaption>KANGUVA</figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="assets/movie3.jpg" alt="Salaar" />
+          <figcaption>SALAAR</figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="assets/movie4.jpg" alt="Mirai" />
+          <figcaption>MIRAI</figcaption>
+        </figure>
+
+        <!-- repeat or add more -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact container">
+      <h2>Let's get in touch</h2>
+      <p>Or just reach out manually to <a href="mailto:info@universalefx.com">info@universalefx.com</a></p>
+
+      <form id="contactForm" class="contact-form" enctype="multipart/form-data" novalidate>
+        <label>
+          Name *
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email *
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Company/Studio name *
+          <input type="text" name="company" required />
+        </label>
+
+        <label>
+          Subject *
+          <input type="text" name="subject" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5"></textarea>
+        </label>
+
+        <label>
+          Upload Reference File
+          <input type="file" name="reference" accept="image/*,application/pdf,video/*" />
+        </label>
+
+        <button type="submit" class="btn">Send message</button>
+      </form>
+
+      <div id="formStatus" class="form-status" aria-live="polite"></div>
+    </section>
+
+    <!-- Footer / About / Location -->
+    <footer class="site-footer container" id="about">
+      <div class="footer-grid">
+        <div>
+          <h3>Our Services</h3>
+          <p>Rotoscoping • Prep / Paint (Cleanup) • Match Moving / Tracking • Compositing</p>
+        </div>
+
+        <div>
+          <h3>Location</h3>
+          <address>
+            WEST MARREDPALLY<br/>
+            4-10-005, Plot No.3/3, 2nd Floor, Backside of West Marredpally Police Station,<br/>
+            Secunderabad, Hyderabad Telangana - 500 026
+          </address>
+        </div>
+      </div>
+
+      <p class="copyright">Copyright &copy; 2025 All Rights Reserved by Universal EFX Studio.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
